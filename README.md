@@ -1,5 +1,7 @@
 # frontendmentor-nftcard
 
+Link para acessar a pagina -> https://maiconrmonteiro.github.io/frontendmentor-nftcard
+
 # Frontend Mentor - NFT preview card component
 
 ![Design preview for the NFT preview card component coding challenge](./design/desktop-preview.jpg)
