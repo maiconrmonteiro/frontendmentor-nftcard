@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    background-color: var(--neutral-dark);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.nft-card {
+    background-color: var(--neutral-medium);
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.equilibrium-card {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.link-card {
+    display: flex;
+    position: relative;
+}
+
+.title {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 15px
+}
+
+.title:hover{
+    color: var(--primary-medium);
+}
+
+.txt-card {
+    color: var(--primary-soft);
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.txt-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.txt-info .valor {
+    color: var(--primary-medium);
+    display: flex;
+} 
+
+.txt-info .days-left {
+    color: var(--primary-soft);
+    display: flex;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    border-top: 1px solid var(--primary-soft);
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+
+.avatar {
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-soft);
+    margin-right: 18px;
+}
+
+.txt-creator {
+    color: var(--primary-soft);
+}
+
+.txt-creator > a {
+    color: white;
+}
+
+.txt-creator > a:hover {
+    color: var(--primary-medium);
+}
+
+.txt-info .valor::before {
+    content: "";
+    background-image: url(../img/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 11px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.txt-info .days-left::before {
+    content: "";
+    background-image: url(../img/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 14px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.link-card::before {
+    content: "";
+    background-color: var(--primary-medium);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.link-card::after {
+    content: "";
+    background-image: url(../img/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.link-card:hover::before {
+    opacity: 0.3;
+}
+
+.link-card:hover::after {
+    opacity: 1;
+}
